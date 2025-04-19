@@ -1,27 +1,94 @@
-<script>
-function downloadFile() {
-    fetch('shumenu2025.txt')
-        .then(response => response.blob())
-        .then(blob => {
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'shumenu2025.txt';
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
-        });
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Sushi House Urus 2025</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            white-space: pre;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .menu-container {
+            background-color: white;
+            padding: 30px;
+            max-width: 700px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #c62828;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            white-space: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Меню Sushi House Urus</h1>
+Меню Sushi House Urus
+Наггетсы 
+1.  9 штук - 180р
+2.  12 штук - 240р
+3.  20 штук - 380р
 
-// Автоматическая загрузка при открытии страницы (по желанию)
-window.onload = function() {
-    setTimeout(downloadFile, 1000);
-};
+Острые/обычные крылышки
+1.  6 штук - 330р 
+2.  9 штук - 480р
+3.  20 штук - 1т. (ровно) 
 
-// Или при клике на кнопку
-document.querySelector('.download-btn').addEventListener('click', function(e) {
-    e.preventDefault();
-    downloadFile();
-});
-</script>
+Шашлычные крылышки
+1.  6 штук - 330р
+2.  9 штук - 480р
+3.  20 штук - 1т. (ровно)
+4.  Креветки в кляре 300р
+
+Фастфуд
+1. Кинкер - 180р
+2. Картошка Фри - 120р
+3. Картошка по Деревенски - 130р
+4. Хот Дог - 60/70р
+5. Шаурма - 180р
+6. Донар - 180р
+7. Чизбургер - 130р
+8. Гамбургер - 120р
+
+Гиро
+1. В булочке 180р
+2. В контейнере 320р
+
+Роллы (все по 300 рублей)
+1.  Бешеный лосось
+2.  Горячий шик
+3.  Калифорния с крабом
+4.  Калифорния с лососем
+5.  Калифорния ночная
+6.  Цунами
+7.  Филадельфия
+8.  Эби Темпура
+   9.   Бешеный Цунами
+
+Пицца (Большая 450р, Средняя 400р.)
+1. Ассорти
+2. 4-Сезона
+3. Пеперони
+4. По деревенски
+5. Куриная
+6. Грибая
+7. Сырная
+8. Мясная
+9. Цезарь
+10. Маргарита
+
+
+2025
+    </div>
+</body>
+</html>
