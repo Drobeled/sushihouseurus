@@ -25,49 +25,46 @@
             text-align: center;
             color: #c62828;
             font-family: Arial, sans-serif;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
             white-space: normal;
         }
-        .header-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .contact-info {
+            text-align: center;
             margin-bottom: 20px;
             white-space: normal;
-            flex-direction: row-reverse; /* Это поменяет порядок элементов */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
         }
         .phone {
             font-weight: bold;
             font-size: 18px;
         }
-        .image-placeholder {
-            width: 100px;
-            height: 100px;
-            background-color: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px dashed #ccc;
+        .logo-img {
+            height: 1em;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
     <div class="menu-container">
-        <div class="header-info">
-            <div class="phone">+7 (938) 024-56-56</div>
-            <img src="IMG_3237.png" alt="Sushi House Urus" style="width: 100px; height: 100px;">
-        </div>
         <h1>Меню Sushi House Urus</h1>
+        <div class="contact-info">
+            <img src="IMG_3237.png" alt="Logo" class="logo-img">
+            <div class="phone">+7 (938) 024-56-56</div>
+        </div>
+
 Меню Sushi House Urus
-Наггетсы 
+Наггетсы 
 1.  9 штук - 180р
 2.  12 штук - 240р
 3.  20 штук - 380р
 
 Острые/обычные крылышки
-1.  6 штук - 330р 
+1.  6 штук - 330р 
 2.  9 штук - 480р
-3.  20 штук - 1т. (ровно) 
+3.  20 штук - 1т. (ровно) 
 
 Шашлычные крылышки
 1.  6 штук - 330р
@@ -105,8 +102,8 @@
 2. 4-Сезона
 3. Пеперони
 4. По деревенски
-5. Куриная
-6. Грибая
+5. Куринная
+6. Грибная
 7. Сырная
 8. Мясная
 9. Цезарь
@@ -116,7 +113,8 @@
 1. Мясная - 100р
 2. С сладким творогом - 70
 
-beta1.2(release5)
+alpha v1.4
+releaseVersion = 59
     </div>
 </body>
 </html>
